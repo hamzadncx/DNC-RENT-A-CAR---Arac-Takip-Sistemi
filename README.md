@@ -15,7 +15,7 @@ Bu proje, PHP ve MySQL kullanılarak geliştirilmiş kapsamlı bir Araç Kiralam
 * **Backend:** PHP 
 * **Veritabanı:** MySQL
 * **Frontend:** HTML5, CSS3, Flexbox
-* **Geliştirme Ortamı:** XAMPP Localhost, Visual Studio Code
+* **Geliştirme Ortamı:** Visual Studio Code
 
 ## 📷 Ekran Görüntüleri
 * Anasayfa Paneli
