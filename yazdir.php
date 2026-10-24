@@ -7,7 +7,7 @@ if(!isset($_GET["id"])){ echo "Sözleşme ID bulunamadı!"; exit; }
 $vtbaglan = new mysqli("localhost", "root", "", "vt_242703017");
 $kiralama_id = $_GET["id"];
 
-// Tüm bilgileri tek seferde çekmek için detaylı INNER JOIN
+
 $sorgu = "SELECT k.*, m.*, a.* FROM dnc_kiralamalar k
           INNER JOIN dnc_musteriler m ON k.dnc_musteri_id = m.dnc_musteri_id
           INNER JOIN dnc_araclar a ON k.dnc_arac_id = a.dnc_arac_id 
@@ -42,7 +42,7 @@ if(!$veri){ echo "Sözleşme bulunamadı!"; exit; }
         .imza-alani { text-align: center; width: 40%; }
         .imza-alani .cizgi { border-bottom: 1px solid #000; margin-top: 50px; margin-bottom: 10px; }
         
-        /* Yazdırılırken dış çerçeveyi ve gölgeyi kaldırır, sadece A4 içeriğini basar */
+        
         @media print {
             body { padding: 0; }
             .kagit { border: none; box-shadow: none; padding: 0; }
