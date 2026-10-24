@@ -24,7 +24,7 @@ $b_sayi = $b_sorgu->fetch_assoc()['toplam_bakim'];
     <style>
         body { background-color: #0f3460; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; display: flex; }
         
-        /* MODERN SOL MENÜ (SIDEBAR) TASARIMI */
+        
         .sidebar { width: 260px; background: rgba(0,0,0,0.25); height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; padding-top: 20px; box-shadow: 4px 0 15px rgba(0,0,0,0.3); z-index: 100; }
         .sidebar .logo { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .sidebar .logo-icon { font-size: 50px; margin-bottom: 10px; }
@@ -34,7 +34,7 @@ $b_sayi = $b_sorgu->fetch_assoc()['toplam_bakim'];
         .sidebar .cikis-btn { margin-top: auto; margin-bottom: 30px; background: rgba(255,107,107,0.1); color: #ff6b6b; }
         .sidebar .cikis-btn:hover { background: #ff6b6b; color: white; }
 
-        /* SAĞ İÇERİK ALANI (MAIN CONTENT) */
+        
         .main-content { margin-left: 260px; padding: 40px; width: calc(100% - 260px); box-sizing: border-box; min-height: 100vh; }
         .header { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 40px; }
         .header h1 { margin: 0; color: white; letter-spacing: 1px; font-size: 28px; }
