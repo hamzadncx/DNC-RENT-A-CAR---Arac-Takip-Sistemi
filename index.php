@@ -43,21 +43,21 @@ if($_POST){
             box-shadow: 0 8px 32px rgba(0,0,0,0.3); 
             backdrop-filter: blur(10px);
             width: 320px;
-            text-align: center; /* Her şeyi ortalar */
+            text-align: center; 
         }
-        /* Yeni eklenen başlığın tasarımı */
+       
         form h2 {
             color: white;
             margin: 0 0 25px 0;
             font-size: 26px;
             letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Yazıya şık bir derinlik katar */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
         }
         pre { 
             font-family: inherit; 
             font-size: 16px; 
             margin: 0; 
-            white-space: normal; /* Koddaki gereksiz boşlukları iptal eder, ortalamayı sağlar */
+            white-space: normal; 
         }
         input[type="text"], input[type="password"] { 
             display: block; 
@@ -76,7 +76,7 @@ if($_POST){
             font-weight: bold; 
             margin: 5px;
         }
-        input[type="submit"] { background-color: #4CAF50; color: white; } /* Yeşil Giriş Butonu */
+        input[type="submit"] { background-color: #4CAF50; color: white; } 
         input[type="submit"]:hover { background-color: #45a049; }
         input[type="reset"] { background-color: #ddd; color: #333; }
         input[type="reset"]:hover { background-color: #ccc; }
@@ -84,7 +84,6 @@ if($_POST){
 </head>
 <body>
     <form action="#" method="post">
-        <!-- İsteğin üzerine eklenen yeni başlık -->
         <h2>DNC RENT A CAR GİRİŞ</h2>
         <pre align="center">
         Kullanıcı Adı:  <input type="text" name="kad">
