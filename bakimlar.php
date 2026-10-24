@@ -54,7 +54,7 @@ if(isset($_GET["duzenle"])){
     <style>
         body { background-color: #0f3460; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; display: flex; }
         
-        /* SIDEBAR */
+        
         .sidebar { width: 260px; background: rgba(0,0,0,0.25); height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; padding-top: 20px; box-shadow: 4px 0 15px rgba(0,0,0,0.3); z-index: 100; }
         .sidebar .logo { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .sidebar .logo-icon { font-size: 50px; margin-bottom: 10px; }
@@ -64,7 +64,7 @@ if(isset($_GET["duzenle"])){
         .sidebar .cikis-btn { margin-top: auto; margin-bottom: 30px; background: rgba(255,107,107,0.1); color: #ff6b6b; }
         .sidebar .cikis-btn:hover { background: #ff6b6b; color: white; }
 
-        /* MAIN CONTENT */
+        
         .main-content { margin-left: 260px; padding: 40px; width: calc(100% - 260px); box-sizing: border-box; min-height: 100vh; }
         
         .baslik-alani { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 30px; }
@@ -81,7 +81,7 @@ if(isset($_GET["duzenle"])){
         input[type="submit"] { width: 100%; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; background: #4CAF50; color: white; font-size: 16px; transition: 0.3s;}
         input[type="submit"]:hover { background: #45a049; }
         
-        /* KAYMAYI ÖNLEYEN YENİ BUTON TASARIMLARI */
+        
         .islem-butonlari { display: flex; justify-content: center; gap: 8px; }
         .btn-sil { background: #ff6b6b; color: white; padding: 6px 12px; text-decoration: none; border-radius: 6px; font-size: 14px; transition: 0.2s;}
         .btn-sil:hover { background: #ff4757; }
