@@ -5,14 +5,14 @@ if(!isset($_SESSION["kullanici"])){ header('Location:giris2.php'); exit; }
 $vtbaglan = new mysqli("localhost", "root", "", "vt_242703017");
 $mesaj = "";
 
-// SİLME
+
 if(isset($_GET["sil"])){
     $sil_id = $_GET["sil"];
     $vtbaglan->query("DELETE FROM dnc_musteriler WHERE dnc_musteri_id='$sil_id'");
     header("Location: musteriler.php");
 }
 
-// EKLEME VE GÜNCELLEME
+
 if($_POST){
     if(isset($_POST["musteri_ekle"])){
         $ad_soyad = $_POST["m_ad"];
@@ -29,7 +29,7 @@ if($_POST){
     }
 }
 
-// FORM MODUNU BELİRLEME
+
 $duzenle_modu = false;
 $d_ad = ""; $d_tel = ""; $d_id = "";
 if(isset($_GET["duzenle"])){
@@ -51,7 +51,7 @@ if(isset($_GET["duzenle"])){
     <style>
         body { background-color: #0f3460; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; display: flex; }
         
-        /* SIDEBAR */
+        
         .sidebar { width: 260px; background: rgba(0,0,0,0.25); height: 100vh; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; padding-top: 20px; box-shadow: 4px 0 15px rgba(0,0,0,0.3); z-index: 100; }
         .sidebar .logo { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .sidebar .logo-icon { font-size: 50px; margin-bottom: 10px; }
@@ -61,7 +61,7 @@ if(isset($_GET["duzenle"])){
         .sidebar .cikis-btn { margin-top: auto; margin-bottom: 30px; background: rgba(255,107,107,0.1); color: #ff6b6b; }
         .sidebar .cikis-btn:hover { background: #ff6b6b; color: white; }
 
-        /* MAIN CONTENT */
+        
         .main-content { margin-left: 260px; padding: 40px; width: calc(100% - 260px); box-sizing: border-box; min-height: 100vh; }
         
         .baslik-alani { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 30px; }
